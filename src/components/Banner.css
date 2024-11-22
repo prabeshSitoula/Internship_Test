@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+
+.banner {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* Remove padding to eliminate space */
+  margin: 0; /* Remove margin */
+  width: 100vw; /* Full viewport width */
+  height: 400px; /* Ensure height is consistent */
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
+}
+
+.banner-item {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+  min-width: 350px;
+  height: 100%; /* Ensure it takes the full height */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.banner-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.banner-info button {
+  margin-top: 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-info button:hover {
+  background: green;
+  color: #fff;
+}
+
+/* Arrows to slide images */
+.arrow-button {
+  position: absolute;
+  top: 10px; /* Position it 10px from the top of the .banner */
+  transform: translateY(0); /* No vertical adjustment needed */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2; /* Ensure the arrows are in front of images */
+  font-size: 30px; /* Larger arrow size */
+}
+
+.arrow-left {
+  left: 20px; /* Position it on the left side of the banner */
+  border-left: 20px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.arrow-right {
+  right: 20px; /* Position it on the right side of the banner */
+  border-right: 20px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    height: auto; /* Allow height to adjust for smaller screens */
+  }
+
+  .banner-item {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Space between items */
+  }
+
+  .banner-info {
+    bottom: 10px;
+    left: 10px;
+    padding: 8px;
+  }
+
+  .arrow-button {
+    font-size: 24px; /* Slightly smaller arrow for smaller screens */
+  }
+}

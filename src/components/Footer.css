@@ -1,0 +1,137 @@
+/* Importing Nunito and Poppins fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600&display=swap");
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: "Nunito", sans-serif; /* Apply Nunito font */
+  font-weight: 300; /* Lighter font weight for general text */
+  font-size: 14px; /* Set a default font size for the body */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif; /* Apply Nunito font to h3 */
+  font-weight: 600; /* Medium weight for h3 */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif; /* Apply Poppins font to h4 */
+  font-weight: 600; /* Regular weight for h4 */
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 5px 0;
+  line-height: 1.6;
+  font-weight: 300; /* Lighter font weight for paragraphs and list items */
+  font-size: 13px; /* Slightly smaller font size for paragraph and list items */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300; /* Lighter font weight for links */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-socials a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300; /* Lighter font weight for social links */
+  font-size: 14px; /* Smaller font size for social links */
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 20px; /* 9px border radius for input */
+  font-weight: 300; /* Lighter font weight for input text */
+  flex: 1; /* Allow the input to expand */
+}
+
+.footer-newsletter button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* 9px border radius for button */
+  cursor: pointer;
+  font-weight: 600; /* Regular font weight for button text */
+  margin-left: 5px;
+}
+
+.footer-newsletter button:hover {
+  background-color: #218838;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-weight: 300; /* Lighter font weight for footer bottom text */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300; /* Lighter font weight for footer links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  width: 70px;
+  height: auto; /* Ensure the logo maintains its aspect ratio */
+  margin-right: 10px;
+  border-radius: 50%;
+  filter: none; /* Remove any unwanted filter effects */
+}
+
+.footer-logo h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600; /* Regular font weight for footer logo text */
+}
